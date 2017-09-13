@@ -1,0 +1,3442 @@
+html {
+    height: 100%;
+   overflow-x: hidden;
+}
+
+body {
+    background: white;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.fixed{
+    
+    position: fixed;
+    
+     top:0; left:0;
+    width: 100%; }
+}
+a:visited,
+a {
+
+    text-decoration: none;
+   
+}
+.nav-bar-right-menu li a:link , .nav-bar-right-menu li a:visited ,.nav-bar-right-menu li a{
+    
+    
+    color: white;
+}
+.error{
+    text-align: center;
+    color: red;
+}
+.typed-cursor{
+    opacity: 0;
+    -webkit-animation: blink 1s infinite;
+    -moz-animation: blink 1s infinite;
+    animation: blink 1s infinite;
+    animation-iteration-count: 8;
+     animation-fill-mode:backwards;
+     
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+.nav-bar {
+    z-index: 10;
+    height: 80px;
+    position: absolute;
+    width: 100%;
+    background: #2199e8;
+
+    padding: 0;
+    margin: 0;
+}
+
+.nav-bar-left {
+    display: inline-block;
+    left: 40px;
+    position: absolute;
+}
+
+.nav-bar-right {
+    top: 40%;
+    position: absolute;
+    right: 40px;
+    display: inline-block;
+}
+
+.nav-bar-right-menu {
+    margin: 0;
+    display: inline-flex;
+}
+.nav-bar-right-menu ul li a{
+    
+    color:white !important;
+}
+.nav-bar-right-menu li {
+    list-style-type: none;
+    color: white;
+    margin-left: 20px;
+}
+
+.nav-bar-button-outer {
+    margin-top: -5px;
+}
+
+.nav-bar-button {
+    border-radius: 15px;
+    background: #2199e8;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 2px solid white;
+    transition: all 0.4s ease;
+}
+
+.nav-bar-button:hover {
+    color: #2199e8 !important;
+    background: white;
+}
+
+.main-body-outer {
+    padding-top: 80px;
+    height: 660px;
+    border-bottom: 2px solid black;
+    background-image: url("../Image/ScottishHome.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.main-body-inner-text {
+    margin: 0;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+50,000000+100&0+0,0.5+25,1+50,0.5+75,0+100 */
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 25%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0.5) 75%, rgba(0, 0, 0, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 25%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0.5) 75%, rgba(0, 0, 0, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 25%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0.5) 75%, rgba(0, 0, 0, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000', GradientType=1);
+    /* IE6-9 */
+    width: 80%;
+    position: absolute;
+    text-align: center;
+}
+
+.main-body-inner-text p {
+    font-size: 30px;
+}
+
+.property-searchbar {
+    position: relative;
+    top: 65%;
+}
+
+.shadow {
+    padding: 0;
+    box-shadow: 0px 0px 20px 6px rgba(31, 31, 31, 0.68);
+    border-radius: 15px 0px 0px 15px;
+}
+
+.reduced-margins {
+    margin-left: 5%;
+    margin-right: 10%;
+}
+
+.sliding-u-l-r {
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    width: 0px;
+    transition: 0.5s ease;
+    white-space: nowrap;
+    height: 25px;
+}
+
+.sliding-u-l-r:after {
+    margin-top: -2px;
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: transparent;
+    -webkit-transition: all 600ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: all 600ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.sliding-u-l-r:hover:after {
+    background: white;
+    width: 100%;
+}
+
+.rounded-edge {
+    border-radius: 15px 0px 0px 15px;
+}
+
+.main-body-lower-content-header {
+    padding-top: 30px;
+    font-size: 23px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.main-body-lower-content-header,
+.nav-bar-right-menu li a,
+.input-group-field,
+.main-body-inner-text p {
+    font-family: lato;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.main-body-lower-content {
+    height: 30.5%;
+    width: 100%;
+    padding-top: 1%;
+    background: #ffffff;
+}
+
+.fa-icon-resize {
+    padding: 0;
+    margin: 0;
+    font-size: 7em;
+}
+
+.fa-large-list-resize {
+    top: 25px;
+}
+
+.fa-search {
+    padding-left: 14px;
+    padding-right: 15px;
+}
+
+.main-body-content {
+    top: 80px;
+    height: 91.6%;
+    width: 100%;
+    background: #ffffff;
+    display: block;
+    position: absolute;
+}
+
+.main-body-lower-content-text {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+}
+
+.register-form {
+    background: #2199e8;
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    box-shadow: 10px -10px 20px 10px grey;
+}
+
+.input-group-round {
+    border-radius: 15px 15px 15px 15px !important;
+}
+
+.input-group-rounded {
+    border-radius: 0px 15px 15px 0px !important;
+}
+
+.login-form {
+    padding-top: 80px;
+}
+
+.full-width-button {
+    color: white;
+    width: 100%;
+}
+
+.tenant-registerform {
+    display: block;
+}
+
+.onoffswitch {
+    left: 35%;
+    position: relative;
+    width: 116px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.onoffswitch-checkbox {
+    display: none;
+}
+
+
+
+input.star { display: none; }
+
+label.star {
+    margin: 0;
+
+    margin-right: 0px !important;
+     float: right;
+  padding: 0;
+  font-size: 20px;
+  color: white;
+ 
+}
+
+.centered{
+    
+    text-align: center;
+}
+.help-text,.centered{
+    
+    color: white;
+}
+
+.onoffswitch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid #000000;
+    border-radius: 50px;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.onoffswitch-inner {
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+
+.onoffswitch-inner:before,
+.onoffswitch-inner:after {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 31px;
+    padding: 0;
+    line-height: 31px;
+    font-size: 16px;
+    color: white;
+    font-family: Trebuchet, Arial, sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.onoffswitch-inner:before {
+    content: "Tenant";
+    padding-left: 13px;
+    padding-right: 20px;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.onoffswitch-inner:after {
+    content: "Landlord";
+    padding-right: 13px;
+    background-color: #FFFFFF;
+    color: #000000;
+    text-align: right;
+}
+
+.onoffswitch-switch {
+    display: block;
+    width: 20px;
+    margin: 5.5px;
+    background: #000000;
+    position: absolute;
+    top: 0;
+    bottom: 10px;
+    right: 81px;
+    border: 2px solid #000000;
+    border-radius: 50px;
+    transition: all 0.3s ease-in 0s;
+}
+
+.onoffswitch-checkbox:checked+ .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked+ .onoffswitch-label .onoffswitch-switch {
+    right: 0px;
+    background-color: #FFFFFF;
+}
+
+.login-link {
+    padding: 5px;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.4s ease;
+}
+
+.login-link:hover {
+    background: white;
+    color: rgba(0, 61, 102, 0.9);
+}
+
+.footer-text {
+    padding-top: 30px;
+}
+
+label,
+.form-header-text {
+    text-align: center;
+    color: white;
+}
+
+
+#LandLord-registerform {
+    display: none;
+}
+
+.Login-header {
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.big-button {
+    font-size: 2em;
+    padding: 30px;
+}
+
+.inverted-colour {
+    color: black;
+}
+
+.inverted-colour a {
+    color: deepskyblue;
+}
+
+.inverted-colour {
+    font-size: 1.2em;
+}
+
+.circle {
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    background: black;
+    position: relative;
+    border: 6px solid rgba(0,0,0,0.08);
+     transition: all 0.2s ease;
+}
+.imageborder img{
+    
+    border-radius: 0px 10px 0px 0px;
+}
+
+select, option { width: __; }
+.circle:hover {
+    background: #0C7C99;
+}
+
+.cirlce-container {
+    position: relative;
+    left: 250px;
+    
+}
+
+.circle-lower {
+    margin-top: 40px;
+}
+
+
+.settings-bubble-text a:link,.settings-bubble-text a:visited{
+    color: black;
+}
+.settings-bubble-text{
+    font-size: 1.2em;
+    margin-top: 20px;
+    text-align: center;
+     transition: all 0.2s ease;
+}
+
+.settings-bubble-text:hover{
+    
+     transition: all 0.2s ease;
+}
+
+.circle-center {
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    color: white;
+}
+
+.circle-center-logo {
+    top: 10px;
+    position: relative;
+    text-align: center;
+}
+
+.sidebar {
+    top:0;
+    position: absolute;
+    left: 0px;
+    height: 100%;
+    width: 210px;
+    background: #2199e8;
+    text-align: left;
+    border-right: 1px solid rgba(0,0,0,0.5);
+}
+
+.sidebar-menu{
+    
+   margin:10px;
+   
+}
+.sidebar-menu  li{
+    color: #E8E8E8;
+  font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    background:  linear-gradient(to right, #0C7C99 50%, #2199e8 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition:all 0.4s ease;
+}
+
+
+.sidebar-menu a li{
+    color: #E8E8E8;
+  font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    background:  linear-gradient(to right, #0C7C99 50%, #2199e8 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition:all 0.4s ease;
+        padding-bottom: 10px;
+}
+
+.sidebar-menu a li:hover{
+    color:white;
+    background-position: left bottom;
+}
+.sidebar-menu > li, .underline{
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    
+    padding-top: 10px;
+
+   
+    border-bottom: 1px solid rgba(255,255,255,0.6);
+    
+}
+
+li label{
+   
+    font-size: 16px;
+}
+
+.sidebar-menu-bottom{
+    border-bottom: 0;
+    border-right: 0px;
+   width: 90.5%;
+    position: absolute;
+    bottom: 0;
+}
+.sidebar-menu-bottom a{
+    border: 1px solid black;
+    border-right: 0;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+   
+    
+
+}
+.advert-container1{
+   padding-top: 20px;
+    left: 100px;
+    height: 100%;
+    width: 84.2%;
+    position: relative;
+ 
+   margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.header-content-pages{
+    
+    position: absolute;
+    left: 0;
+}
+.header-content-selection{
+    text-align: right;
+    position: absolute;
+    right: 0;
+    
+}
+.header-content{
+
+    
+    margin: auto;
+    width: 100%;
+    position: relative;
+    height: 80px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.advert-standard {
+    background: rgba(0,0,0,0.1);
+    margin: auto;
+   width: 1200px;
+    position: relative;
+    
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px 10px 10px 10px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    height: 300px;
+    margin-top:   20px;
+    transition: all 0.4s ease;
+   
+}
+.advert-standard:hover{
+     border: 2px solid rgba(0, 0, 0, 0.2);
+    background: rgba(0,0,0,0.15);
+    
+}
+
+.rounded-edges{
+      position: relative;
+    top: -2px;
+    left: -1px;
+     border-radius: 10px 0px 0px 0px;
+}
+.advert-standard-picture{
+  
+    height: 250px;
+    width: 250px;
+    position: relative;
+    
+}
+.advert-standard-picture-text{
+    padding-top: 15px;
+    padding-left: 5px;
+   
+    height: 50px;
+    width: 250px;
+    bottom: 0;
+    position: absolute;
+    
+}
+
+.advert-standard-left-container{
+    position: absolute;
+    width: 250px;
+    height:100%;
+   
+    border-right: 1px solid black;
+    border-radius: 10px 0px 0px 10px;
+} 
+.advert-standard-middle-container{
+ left: 250px;
+    position: absolute;
+   
+    height: 100%;
+    width: 700px;
+}
+.advert-standard-middle-container-top{
+    height: 48px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    
+}
+
+.advert-standard-middle-container-middle{
+    position: absolute;
+    height: 198px;
+   
+    width: 100%;
+    
+    
+}
+.advert-standard-middle-container-bottom{
+    height: 50px;
+    top: 246px;
+   position: absolute;
+
+    width: 100%;
+    border-top: 1px solid black;
+    
+}
+
+
+.advert-standard-right-container{
+    position: absolute;
+        left: 950px;
+    height: 100%;
+    width: 246px;
+      border-radius: 0px 10px 10px 0px;
+    border-left: 1px solid black;
+}
+.advert-standard-right-container-top{
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    
+          border-radius: 0px 10px 0px 0px;
+
+}
+
+.advert-standard-right-container-bottom{
+    position: absolute;
+    width: 100%;
+    top: 200px;
+    height: 96px;
+ 
+          border-radius: 0px 0px 10px 0px;
+
+  
+    
+}
+
+    
+.advert-standard-right-container-bottom-dislike{
+    position: absolute;
+    background: #B21400;  
+    height: 48px;
+    width: 100%;
+    transition: all 0.3s ease;
+     text-align: center;
+      cursor: pointer;
+}
+.advert-standard-right-container-bottom-dislike:hover{
+    background: #EF1B00;
+    
+}
+.advert-standard-right-container-bottom-like{
+      position: absolute;
+    background: green;
+    height: 48px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+.advert-standard-right-container-bottom-like:hover{
+    background: #00BA25;
+    
+}
+.advert-standard-right-container-bottom-like,.advert-standard-right-container-bottom-view,.advert-standard-right-container-bottom-dislike{
+    text-align: center;
+      cursor: pointer;
+}
+.advert-standard-right-container-bottom-view{
+    top: 48px;
+    position: absolute;
+    background: #008CBA;
+    height: 48px;
+    width: 100%;
+      transition: all 0.3s ease;
+    
+}
+
+.advert-standard-right-container-bottom-view:hover{
+     background: #00C0FF;
+    
+}
+
+.advert-standard-left-container-propertyimage{
+    width: 100%;
+    height: 250px;
+
+    border-radius: 10px 0px 0px 0px;
+    
+}
+.advert-standard-left-container-imagecount{
+    position: absolute;
+    top: 246px;
+    height: 50px;
+    width: 100%;
+
+    border-top: 1px solid black;
+    border-radius: 00px 0px 0px 10px;
+}   
+    
+}
+.modal {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;       
+    background: rgba( 0, 0, 0, 0.3 ) 
+                url('../Image/ajax-loader.gif') 
+                50% 50% 
+                no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+.advert-container1.loading {
+    overflow: hidden;   
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+
+.advert-standard-picture-text a:visited{
+    
+    color: black;
+}
+.advert-standard-headerbar {
+    font-size: 18px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.advert-standard-rightarea{
+    left: 248px;
+      top: 0;
+    width: 949px;
+    margin-left: 1px;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    position: absolute;
+    height: 100%;
+    
+}
+.advert-standard-rightarea-description{
+   padding-right:200px;
+    width: 80%;
+    height: 147px;
+    
+    position: relative;
+    
+}
+
+.advert-standard-rightarea-keyfacts{
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    width: 80%;
+    
+    height: 50px;
+    
+    position: relative;
+    z-index: 10;
+}
+.advert-description{
+    
+    font-size: 20px;
+    
+}
+
+.advert-standard-rightarea-price,.advert-standard-rightarea-price a:visited{
+    color: #d64521;
+    right: 10px;
+    font-size: 25px;
+    position: absolute;
+    top: 5px;
+   
+    transition: all 0.4s ease;
+    
+    
+}
+.imagecount-value{
+    padding-top: 10px;
+    padding-left: 10px;
+    color: black;
+}
+.advert-standard-rightarea-price a{
+       color: #d64521;
+     transition: all 0.4s ease;
+}
+.advert-standard-rightarea-price a:hover, .advert-standard-rightarea-price a:visited:hover{
+   color: #FF5E36;
+     transition: all 0.4s ease;
+}
+.grey-text{
+     color: rgba(0,0,0,0.8)
+    
+}
+.bigger-ad-text{
+    position: absolute;
+    top: 11px;
+    left: 5px;
+    font-size: 18px;
+}
+.advert-standard{
+    
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.keyfacts{
+    padding-top: 12px;
+    display: inline-flex;
+}
+.keyfacts li{
+    margin-right: 19px;
+    
+}
+.keyfacts li:not(:first-child):not(:last-child):after{
+    content:',';
+    
+}
+.advert-standard-rightarea-likebutton,.advert-standard-rightarea-dislikebutton{
+     height: 70px;
+    right: -1px;
+    top: 160px;
+    width: 189.59px;
+    position: absolute;
+    text-align: center;
+      
+    transition: all 0.3s ease;
+
+}
+.advert-standard-rightarea-dislikebutton{
+    background: #B21400;
+    
+}
+
+.advert-standard-rightarea-dislikebutton:hover{
+    background: #EF1B00;
+    
+}
+.advert-standard-rightarea-likebutton{
+      background: green;
+    
+}
+.advert-standard-rightarea-likebutton:hover{
+    background: #00BA25;
+    
+}
+.advert-standard-rightarea-viewbutton, .advert-standard-rightarea-likebutton, .advert-standard-rightarea-dislikebutton{
+      cursor: pointer;
+    
+}
+.advert-standard-rightarea-viewbutton{
+     height: 66px;
+    right: -1px;
+    top: 230px;
+     width: 189.59px;
+   border-radius: 0px 0px 10px 0px;
+    position: absolute;
+    text-align: center;
+    background: #008CBA;
+   
+    color: white;
+}
+.advert-standard-rightarea-viewbutton:hover{
+    
+    background: #00C0FF;
+}
+.likebutton-text,.viewbutton-text{
+    color: white;
+    margin-top: 10px;
+    
+}
+.advert-standard-rightarea-landlordpicture{
+    height: 160px;
+    right: -1px;
+    top: 0;
+    width: 20%;
+    position: absolute;
+        border-left: 1px solid rgba(0,0,0,0.2);
+     border-radius: 00px 10px 10px 0px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    
+}
+.advert-standard-rightarea-address{
+    position: relative;
+    height: 50px;
+    width: 80%;
+   
+    
+    
+}
+.pagination-container{
+    text-align: center;
+    width: 75%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header-pagination{
+    text-align: left;
+    width: auto;
+position: absolute;
+left: 27px;
+    top: 22px;
+}
+.pagination-right-arrow,.pagination-left-arrow{
+   cursor: pointer;
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,0.2);
+     transition: all 0.2s ease;
+}
+
+.pagination-right-arrow:hover,.pagination-left-arrow:hover{
+    background: #e4e4e4;
+    
+}
+.bottom-padding{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.new-width {
+    width: 35.66667%;
+    z-index: 100;
+}
+.change-align{
+    
+    position: absolute;
+    right: 0;
+}
+.move-to-right{
+    
+    position: absolute;
+    margin-top: 9px;
+    right: 380px;
+}
+
+.advert-standard-thumbnail {
+    background-position: center center;
+    background-image: url(../Image/audiwec.jpg);
+    height: 200px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image-thumbnail {
+    margin-top: 10px;
+    margin-left: 5px;
+    height: 90px;
+    width: 90px;
+}
+
+.main-property-advert-full {
+    position: absolute;
+    background: #dddfe2;
+    width: 55%;
+    height: 86%;
+    top: 5%;
+}
+
+.side-panel {
+    background: #dddfe2;
+    position: absolute;
+    border: 1px solid black;
+    width: 20%;
+    height: 86%;
+    right: 0px;
+    top: 5%;
+}
+
+.letting-agent-details-name,
+.letting-agent-details-contact,
+.letting-agent-details-rating,
+.letting-agent-details-rating-number {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.letting-agent-details-rating {
+    margin-bottom: 5px;
+}
+
+.letting-agent-description {
+    border-top: 1px solid black;
+}
+
+.side-panel-company-logo {
+    height: 140px;
+    width: 100%;
+}
+
+.register-interest-button {
+    position: absolute;
+    width: 100%;
+    padding: 50px;
+    bottom: 0;
+}
+
+.centered-image {
+    display: block;
+    padding-top: 13px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.main-property-advert-header {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    display: inline-block;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.main-property-advert-header-right {
+    right: 1px;
+    position: absolute;
+    height: 100%;
+    width: 380px;
+}
+
+.main-property-advert-header-left {
+    left: 0;
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-property-advert-header-left-text {
+    font-size: 20px;
+}
+
+.main-property-advert-mainpicture {
+    background: white;
+    background-size: contain;
+    position: relative;
+    height: 50%;
+    border: 1px solid black;
+ 
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.main-property-advert-picture-thumbnails {
+    position: relative;
+    height: 110px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.main-property-advert-details {
+    position: relative;
+
+   
+    border-bottom: 0;
+}
+
+.main-property-advert-left {
+    position: relative;
+    border-right: 1px solid black;
+    width: 60%;
+     border: 1px solid black;
+}
+
+.main-property-advert-right {
+    position: absolute;
+    height: 100%;
+    width: 40%;
+    right: 0;
+    top: 0;
+     border: 1px solid black;
+    border-left: 0;
+}
+
+.main-property-advert-right-features {
+    display: inline-flex;
+}
+
+li {
+    list-style-type: none;
+    margin-left: -15px;
+}
+
+.adjust-checkmark {
+    font-size: 20px;
+}
+
+
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+
+#map {
+    height: 100%;
+}
+
+
+/* Optional: Makes the sample page fill the window. */
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#description {
+   font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#infowindow-content .title {
+    font-weight: bold;
+}
+
+#infowindow-content {
+    display: none;
+}
+
+#map #infowindow-content {
+    display: inline;
+}
+
+.pac-card {
+    margin: 10px 10px 0 0;
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    background-color: #0000;
+    font-family: Roboto;
+}
+
+#pac-container {
+    padding-bottom: 12px;
+    margin-right: 12px;
+}
+
+.pac-container {
+    font-family: 'Source Sans Pro', sans-serif !important;
+}
+
+.pac-controls {
+    display: inline-block;
+    padding: 5px 11px;
+}
+
+.pac-controls label {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+#pac-input {
+    background-color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+}
+
+#pac-input:focus {
+    border-color: #4d90fe;
+}
+
+#title {
+    color: #fff;
+    background-color: #4d90fe;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 6px 12px;
+}
+
+#target {
+    width: 400px;
+}
+
+.push-to-right {
+    position: relative;
+    right: 0;
+    padding-top: 8px;
+    padding-left: 120px;
+}
+
+.rounded-edge {
+    border-radius: 15px 0px 0px 15px !important;
+  
+}
+.row-fix{
+    
+    max-width: 1620px !important;
+    margin-left: 0px !important;
+}
+.fix-width{
+    
+    padding: 0;
+}
+.lower-row{
+    margin-left: 20%!important;
+    margin-right:20%!important;
+    
+}
+[type='checkbox']{
+    
+    
+    margin: 0;
+}
+
+
+
+@media screen and (max-width: 1700px) {
+    .advert-standard-rightarea{
+        
+        width: 75% ;
+    }
+    
+}
+
+
+.btn-style{
+	border : solid 0px #ffffff;
+	-webkit-box-shadow : 0px 0px 5px rgba(0,0,0,0.5);
+	-moz-box-shadow : 0px 0px 5px rgba(0,0,0,0.5);
+	box-shadow : 0px 0px 5px rgba(0,0,0,0.5);
+	font-size : 20px;
+	color : #000000;
+	padding : 15px 68px;
+	background-color : #ffffff;
+    margin-bottom: 108px;
+     transition: all 0.2s ease;
+}
+
+
+.btn-style:hover{
+    
+     transition: all 0.2s ease;
+    background-color: rgb(12, 124, 153);
+}
+
+
+label > [type='checkbox'], label > [type='radio']{
+    
+    margin-right:0;
+}
+.success{
+    height: 100%;
+    width: 100px;
+}
+
+.instructions{
+    position: absolute;
+    background: #e8e6e6;
+    height: 100%;
+    width: 30%;
+    border-right: 1px solid rgba(0,0,0,0.4);
+}
+.property-window{
+    background: white;
+    top: 0;
+    left: 30%;
+    position: absolute;
+    height: 100%;
+    width: 70%;
+
+}
+.image-view{
+    
+    object-fit:contain;
+    height:246px;
+    width:250px;
+    background:green;
+    top: 1px;
+}
+.bottom-buttons{
+    border-top: 1px solid rgba(0,0,0,0.4);
+    max-width: inherit;
+    background: rgb(232, 230, 230);
+    left: 30%;
+    width: 70%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    z-index: 100;
+}
+.support{
+    
+    width: 100%;
+}
+.completion{
+    display: none;
+    position: relative;
+    z-index: 10;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+    width: 100%;
+    text-align: center;
+    
+}
+.child {
+  position: absolute;
+  top: 50%;
+     width: 100%;
+    text-align: center;
+  transform: translateY(-50%);
+}
+.propertyview{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    height: 600px;
+    background: blue;
+    border: 1px solid black;
+}
+.property-header{
+    position: relative;
+    height: 50px;
+    background: white;
+}
+.property-header-left{
+    position: absolute;
+    height: 100%;
+    width: 800px;
+
+}
+.property-header-right{
+    right: 0;
+    position: absolute;
+    height: 100%;
+    background: green;    transition: all 0.4s ease;
+}
+.like-button2{
+    margin-top: 7px;
+    height: 100%;
+    text-align: center;
+    color: white;
+    width: 200px;
+
+}
+.property-header-right:hover{
+  background: #00BA25;
+    cursor: pointer;
+    
+}
+.property-header-left-price{
+    margin-top: 14px;
+    padding-right: 10px;
+    position: absolute;
+    right: 0;
+}
+.property-header-left-details{
+    position: absolute;
+    margin-top: 14px;
+}
+@media (max-width: 1240px) {
+    
+    .main-property-advert-header-left-text{
+        font-size: 16px;
+    }
+    
+}
+@media (max-width: 1440px) {
+    .advert-standard{
+        width: 999px;
+    }
+    .advert-standard-left-container{
+        
+        width:200px;
+        
+    }
+    .advert-standard-middle-container{
+        width: 600px;
+        left: 200px;
+    }
+    .advert-standard-right-container{
+        left: 800px;
+        width: 196px;
+    }
+    .advert-standard-rightarea-price{
+        
+        font-size: 22px;
+    }
+    .header-content-pages{
+        margin-left: 30px;
+        
+    }
+    .header-content{
+        width: 85%;
+        margin-left: 6%;
+        
+    }
+}
+
+html {
+    height: 100%;
+    width: 100%;
+     overflow-x: hidden; 
+}
+
+body {
+    background: white;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+
+.fixed{
+    
+    position: fixed;
+    
+     top:0; left:0;
+    width: 100%; }
+}
+a:visited,
+a {
+
+    text-decoration: none;
+   
+}
+.nav-bar-right-menu li a:link , .nav-bar-right-menu li a:visited ,.nav-bar-right-menu li a{
+    
+    
+    color: white;
+}
+.error{
+    text-align: center;
+    color: red;
+}
+.typed-cursor{
+    opacity: 0;
+    -webkit-animation: blink 1s infinite;
+    -moz-animation: blink 1s infinite;
+    animation: blink 1s infinite;
+    animation-iteration-count: 8;
+     animation-fill-mode:backwards;
+     
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+.nav-bar {
+    z-index: 10;
+    height: 80px;
+    position: absolute;
+    width: 100%;
+    background: #2199e8;
+
+    padding: 0;
+    margin: 0;
+}
+
+.nav-bar-left {
+    display: inline-block;
+    left: 40px;
+    position: absolute;
+}
+
+.nav-bar-right {
+    top: 40%;
+    position: absolute;
+    right: 40px;
+    display: inline-block;
+}
+
+.nav-bar-right-menu {
+    margin: 0;
+    display: inline-flex;
+}
+.nav-bar-right-menu ul li a{
+    
+    color:white !important;
+}
+.nav-bar-right-menu li {
+    list-style-type: none;
+    color: white;
+    margin-left: 20px;
+}
+
+.nav-bar-button-outer {
+    margin-top: -5px;
+}
+
+.nav-bar-button {
+    border-radius: 15px;
+    background: #2199e8;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 2px solid white;
+    transition: all 0.4s ease;
+}
+
+.nav-bar-button:hover {
+    color: #2199e8 !important;
+    background: white;
+}
+
+.main-body-outer {
+    padding-top: 80px;
+    height: 660px;
+    border-bottom: 2px solid black;
+    background-image: url("../Image/ScottishHome.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.main-body-inner-text {
+    margin: 0;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+50,000000+100&0+0,0.5+25,1+50,0.5+75,0+100 */
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 25%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0.5) 75%, rgba(0, 0, 0, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 25%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0.5) 75%, rgba(0, 0, 0, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 25%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0.5) 75%, rgba(0, 0, 0, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000', GradientType=1);
+    /* IE6-9 */
+    width: 80%;
+    position: absolute;
+    text-align: center;
+}
+
+.main-body-inner-text p {
+    font-size: 30px;
+}
+
+.property-searchbar {
+    position: relative;
+    top: 65%;
+}
+
+.shadow {
+    padding: 0;
+    box-shadow: 0px 0px 20px 6px rgba(31, 31, 31, 0.68);
+    border-radius: 15px 0px 0px 15px;
+}
+
+.reduced-margins {
+    margin-left: 5%;
+    margin-right: 10%;
+}
+
+.sliding-u-l-r {
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    width: 0px;
+    transition: 0.5s ease;
+    white-space: nowrap;
+    height: 25px;
+}
+
+.sliding-u-l-r:after {
+    margin-top: -2px;
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: transparent;
+    -webkit-transition: all 600ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: all 600ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.sliding-u-l-r:hover:after {
+    background: white;
+    width: 100%;
+}
+
+.rounded-edge {
+    border-radius: 15px 0px 0px 15px;
+}
+
+.main-body-lower-content-header {
+    padding-top: 30px;
+    font-size: 23px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.main-body-lower-content-header,
+.nav-bar-right-menu li a,
+.input-group-field,
+.main-body-inner-text p {
+    font-family: lato;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.main-body-lower-content {
+    height: 30.5%;
+    width: 100%;
+    padding-top: 1%;
+    background: #ffffff;
+}
+
+.fa-icon-resize {
+    padding: 0;
+    margin: 0;
+    font-size: 7em;
+}
+
+.fa-large-list-resize {
+    top: 25px;
+}
+
+.fa-search {
+    padding-left: 14px;
+    padding-right: 15px;
+}
+
+.main-body-content {
+    overflow-y: auto;
+    top: 80px;
+    height: 91.6%;
+    width: 100%;
+    background: #ffffff;
+    display: inline-flex;
+    position: relative;
+}
+
+.main-body-lower-content-text {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+}
+
+.register-form {
+    background: #2199e8;
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    box-shadow: 10px -10px 20px 10px grey;
+}
+
+.input-group-round {
+    border-radius: 15px 15px 15px 15px !important;
+}
+
+.input-group-rounded {
+    border-radius: 0px 15px 15px 0px !important;
+}
+
+.login-form {
+    padding-top: 80px;
+}
+
+.full-width-button {
+    color: white;
+    width: 100%;
+}
+
+.tenant-registerform {
+    display: block;
+}
+
+.onoffswitch {
+    left: 35%;
+    position: relative;
+    width: 116px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.onoffswitch-checkbox {
+    display: none;
+}
+
+
+
+input.star { display: none; }
+
+label.star {
+    margin: 0;
+
+    margin-right: 0px !important;
+     float: right;
+  padding: 0;
+  font-size: 20px;
+  color: white;
+ 
+}
+
+.centered{
+    
+    text-align: center;
+}
+.help-text,.centered{
+    
+    color: white;
+}
+
+.onoffswitch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid #000000;
+    border-radius: 50px;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.onoffswitch-inner {
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+
+.onoffswitch-inner:before,
+.onoffswitch-inner:after {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 31px;
+    padding: 0;
+    line-height: 31px;
+    font-size: 16px;
+    color: white;
+    font-family: Trebuchet, Arial, sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.onoffswitch-inner:before {
+    content: "Tenant";
+    padding-left: 13px;
+    padding-right: 20px;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.onoffswitch-inner:after {
+    content: "Landlord";
+    padding-right: 13px;
+    background-color: #FFFFFF;
+    color: #000000;
+    text-align: right;
+}
+
+.onoffswitch-switch {
+    display: block;
+    width: 20px;
+    margin: 5.5px;
+    background: #000000;
+    position: absolute;
+    top: 0;
+    bottom: 10px;
+    right: 81px;
+    border: 2px solid #000000;
+    border-radius: 50px;
+    transition: all 0.3s ease-in 0s;
+}
+
+.onoffswitch-checkbox:checked+ .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked+ .onoffswitch-label .onoffswitch-switch {
+    right: 0px;
+    background-color: #FFFFFF;
+}
+
+.login-link {
+    padding: 5px;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.4s ease;
+}
+
+.login-link:hover {
+    background: white;
+    color: rgba(0, 61, 102, 0.9);
+}
+
+.footer-text {
+    padding-top: 30px;
+}
+
+label,
+.form-header-text {
+    text-align: center;
+    color: white;
+}
+
+
+#LandLord-registerform {
+    display: none;
+}
+.landlord-description{
+    padding-left: 15px;
+    text-align: left;
+    
+}
+.landlord-description-text{
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: left;
+    
+}
+.landlord-ratings{
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    
+}
+.enquire-button{
+    bottom: 0;
+    width: 100%;
+    background: #008CBA;
+    position: absolute;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    transition: background 0.2s ease;
+    border-radius: 0px 0px 0px 10px;
+    cursor: pointer;
+}
+.enquire-button:hover{
+    background: #00C0FF;
+    
+}
+
+.Login-header {
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.big-button {
+    font-size: 2em;
+    padding: 30px;
+}
+
+.inverted-colour {
+    color: black;
+}
+
+.inverted-colour a {
+    color: deepskyblue;
+}
+
+.inverted-colour {
+    font-size: 1.2em;
+}
+
+.circle {
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    background: black;
+    position: relative;
+    border: 6px solid rgba(0,0,0,0.08);
+     transition: all 0.2s ease;
+}
+.imageborder img{
+    
+    border-radius: 0px 10px 0px 0px;
+}
+
+select, option { width: __; }
+.circle:hover {
+    background: #0C7C99;
+}
+
+.cirlce-container {
+    position: relative;
+    left: 15vw;
+    width: 85vw;
+    
+}
+
+.circle-lower {
+    margin-top: 40px;
+}
+
+
+.settings-bubble-text a:link,.settings-bubble-text a:visited{
+    color: black;
+}
+.settings-bubble-text{
+    font-size: 1.2em;
+    margin-top: 20px;
+    text-align: center;
+     transition: all 0.2s ease;
+}
+
+.settings-bubble-text:hover{
+    
+     transition: all 0.2s ease;
+}
+
+.circle-center {
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    color: white;
+}
+
+form li label{
+    
+    font-size: 0.81vw;
+}
+.underline ul form li label{
+    text-align: left;
+    font-size: 1.1vw;
+}
+.underline ul form li label input{
+    position: absolute;
+    right: 10px;
+    margin-top: 5px;
+}
+.circle-center-logo {
+    top: 10px;
+    position: relative;
+    text-align: center;
+}
+.button-container{
+    left: 12vw;
+    
+    width: 88vw;
+    position: absolute;
+    text-align: center; 
+     position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.property-container{
+
+    width: 66vw;
+    position: absolute;
+    text-align: center;
+}
+.landlord-info-section{
+    position: absolute;
+    right: 0;
+    width: 12vw;
+    top: 20px;
+   
+    border-radius: 10px 0px 0px 10px;
+    background: rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.4);
+    text-align: center;
+}
+.fa-star{
+    font-size: 24px;
+}
+.rating-number{
+    margin: 0;
+    font-size: 14px;
+}
+.sidebar {
+    top:0;
+    position: fixed;
+    padding-top: 80px;
+    left: 0px;
+    height: 100%;
+    width: 12vw;
+    background: #2199e8;
+    text-align: left;
+    border-right: 1px solid rgba(0,0,0,0.5);
+    transition: padding-top .3s ease-out;
+}
+.control {
+	font-size: 18px;
+	position: relative;
+	display: block;
+	margin-bottom: 15px;
+	padding-left: 30px;
+	cursor: pointer;
+}
+.control__indicator {
+	position: absolute;
+	top: 2px;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	background: #e6e6e6;
+}
+/* Hover and focus states */
+.control:hover input ~ .control__indicator,
+.control input:focus ~ .control__indicator {
+	background: #ccc;
+}
+
+/* Checked state */
+.control input:checked ~ .control__indicator {
+	background: #2aa1c0;
+}
+
+/* Hover state whilst checked */
+.control:hover input:not([disabled]):checked ~ .control__indicator,
+.control input:checked:focus ~ .control__indicator {
+	background: #0e647d;
+}
+
+/* Disabled state */
+.control input:disabled ~ .control__indicator {
+	pointer-events: none;
+	opacity: .6;
+	background: #e6e6e6;
+}
+
+/* Check mark */
+.control__indicator:after {
+	position: absolute;
+	display: none;
+	content: '';
+}
+
+/* Show check mark */
+.control input:checked ~ .control__indicator:after {
+	display: block;
+}
+.accountcreated{
+    display: none;
+    width: 100%;
+}
+.account-creation-info{
+       background: #5cb85c;
+    border: 1px solid rgba(255, 255, 255, 0.81);
+    border-radius:0px 0px 10px 10px;
+    border-top: 0;
+    cursor: pointer;
+}
+.account-created-text{
+    color: rgba(255, 255, 255, 1);
+    padding-top:10px; 
+    font-size: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+/* Checkbox tick */
+.control--checkbox .control__indicator:after {
+	top: 4px;
+	left: 8px;
+	width: 3px;
+	height: 8px;
+	transform: rotate(45deg);
+	border: solid #fff;
+	border-width: 0 2px 2px 0;
+}
+
+/* Disabled tick colour */
+.control--checkbox input:disabled ~ .control__indicator:after {
+	border-color: #7b7b7b;
+}
+
+/* Radio button inner circle */
+.control--radio .control__indicator:after {
+	top: 7px;
+	left: 7px;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: #fff;
+}
+
+/* Disabled circle colour */
+.control--radio input:disabled ~ .control__indicator:after {
+	background: #7b7b7b;
+}
+.control--radio .control__indicator {
+	border-radius: 50%;
+}
+.control input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+.sidebar-menu{
+    
+ 
+   
+}
+.sidebar-menu  li{
+    color: #E8E8E8;
+  font-family: 'Roboto', sans-serif;
+    font-size: 1vw;
+    background:  linear-gradient(to right, #0C7C99 50%, #2199e8 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition:all 0.4s ease;
+}
+
+
+.sidebar-menu a li{
+    color: #E8E8E8;
+  font-family: 'Roboto', sans-serif;
+    font-size: 1.1vw;
+    background:  linear-gradient(to right, #0C7C99 50%, #2199e8 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition:all 0.4s ease;
+        padding-bottom: 10px;
+}
+
+.sidebar-menu a li:hover{
+    color:white;
+    background-position: left bottom;
+}
+.sidebar-menu > li, .underline{
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    
+    padding-top: 10px;
+
+   
+    border-bottom: 1px solid rgba(255,255,255,0.6);
+    
+}
+
+li label{
+   
+    font-size: 16px;
+}
+
+.sidebar-menu-bottom{
+    border-bottom: 0;
+    border-right: 0px;
+   width: 90.5%;
+    position: absolute;
+    bottom: 0;
+}
+.sidebar-menu-bottom a{
+    border: 1px solid black;
+    border-right: 0;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+   
+    
+
+}
+.advert-container1{
+   padding-top: 20px;
+    left: 12vw;
+    height: 100%;
+    width: 87.99vw;
+    position: absolute;
+ 
+
+    
+}
+
+.header-content-pages{
+    
+    position: absolute;
+    left: 0;
+}
+.header-content-selection{
+    text-align: right;
+    position: absolute;
+    right: 0;
+    
+}
+.header-content{
+
+    
+    margin: auto;
+   width: 1300px;
+    position: relative;
+    height: 80px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.advert-standard {
+    background: rgba(0,0,0,0.1);
+    margin: auto;
+   width: 1200px;
+    position: relative;
+    
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px 10px 10px 10px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    height: 300px;
+    margin-top:   20px;
+    transition: all 0.4s ease;
+   
+}
+.advert-standard:hover{
+     border: 2px solid rgba(0, 0, 0, 0.2);
+    background: rgba(0,0,0,0.15);
+    
+}
+
+.rounded-edges{
+      position: relative;
+    top: -2px;
+    left: -1px;
+     border-radius: 10px 0px 0px 0px;
+}
+.advert-standard-picture{
+  
+    height: 250px;
+    width: 250px;
+    position: relative;
+    
+}
+.advert-standard-picture-text{
+    padding-top: 15px;
+    padding-left: 5px;
+   
+    height: 50px;
+    width: 250px;
+    bottom: 0;
+    position: absolute;
+    
+}
+
+.advert-standard-left-container{
+    position: absolute;
+    width: 250px;
+    height:100%;
+   
+    border-right: 1px solid black;
+    border-radius: 10px 0px 0px 10px;
+} 
+.advert-standard-middle-container{
+ left: 250px;
+    position: absolute;
+   
+    height: 100%;
+    width: 700px;
+}
+.advert-standard-middle-container-top{
+    height: 48px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    
+}
+
+.advert-standard-middle-container-middle{
+    position: absolute;
+    height: 198px;
+   
+    width: 100%;
+    
+    
+}
+.advert-standard-middle-container-bottom{
+    height: 50px;
+    top: 246px;
+   position: absolute;
+
+    width: 100%;
+    border-top: 1px solid black;
+    
+}
+
+
+.advert-standard-right-container{
+    position: absolute;
+        left: 950px;
+    height: 100%;
+    width: 246px;
+      border-radius: 0px 10px 10px 0px;
+    border-left: 1px solid black;
+}
+.advert-standard-right-container-top{
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    
+          border-radius: 0px 10px 0px 0px;
+
+}
+
+.advert-standard-right-container-bottom{
+    position: absolute;
+    width: 100%;
+    top: 200px;
+    height: 96px;
+ 
+          border-radius: 0px 0px 10px 0px;
+
+  
+    
+}
+
+    
+.advert-standard-right-container-bottom-dislike{
+    position: absolute;
+    background: #B21400;  
+    height: 48px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+.advert-standard-right-container-bottom-dislike:hover{
+    background: #EF1B00;
+    
+}
+.advert-standard-right-container-bottom-like{
+      position: absolute;
+    background: green;
+    height: 48px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+.advert-standard-right-container-bottom-like:hover{
+    background: #00BA25;
+    
+}
+.advert-standard-right-container-bottom-like,.advert-standard-right-container-bottom-view,.advert-standard-right-container-bottom-dislike{
+    text-align: center;
+      cursor: pointer;
+}
+.advert-standard-right-container-bottom-view{
+    top: 48px;
+    position: absolute;
+    background: #008CBA;
+    height: 48px;
+    width: 100%;
+      transition: all 0.3s ease;
+    
+}
+
+.advert-standard-right-container-bottom-view:hover{
+     background: #00C0FF;
+    
+}
+
+.advert-standard-left-container-propertyimage{
+    width: 100%;
+    height: 250px;
+
+    border-radius: 10px 0px 0px 0px;
+    
+}
+.advert-standard-left-container-imagecount{
+    position: absolute;
+    top: 246px;
+    height: 50px;
+    width: 100%;
+
+    border-top: 1px solid black;
+    border-radius: 00px 0px 0px 10px;
+}   
+    
+}
+.modal {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;       
+    background: rgba( 0, 0, 0, 0.3 ) 
+                url('../Image/ajax-loader.gif') 
+                50% 50% 
+                no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+.advert-container1.loading {
+    overflow: hidden;   
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+
+.advert-standard-picture-text a:visited{
+    
+    color: black;
+}
+.advert-standard-headerbar {
+    font-size: 18px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.advert-standard-rightarea{
+    left: 248px;
+      top: 0;
+    width: 949px;
+    margin-left: 1px;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    position: absolute;
+    height: 100%;
+    
+}
+.advert-standard-rightarea-description{
+   padding-right:200px;
+    width: 80%;
+    height: 147px;
+    
+    position: relative;
+    
+}
+
+.advert-standard-rightarea-keyfacts{
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    width: 80%;
+    
+    height: 50px;
+    
+    position: relative;
+    z-index: 10;
+}
+.advert-description{
+    
+    font-size: 20px;
+    
+}
+
+.advert-standard-rightarea-price,.advert-standard-rightarea-price a:visited{
+    color: #d64521;
+    right: 10px;
+    font-size: 25px;
+    position: absolute;
+    top: 5px;
+   
+    transition: all 0.4s ease;
+    
+    
+}
+.imagecount-value{
+    padding-top: 10px;
+    padding-left: 10px;
+    color: black;
+}
+.advert-standard-rightarea-price a{
+       color: #d64521;
+     transition: all 0.4s ease;
+}
+.advert-standard-rightarea-price a:hover, .advert-standard-rightarea-price a:visited:hover{
+   color: #FF5E36;
+     transition: all 0.4s ease;
+}
+.grey-text{
+     color: rgba(0,0,0,0.8)
+    
+}
+.bigger-ad-text{
+    position: absolute;
+    top: 11px;
+    left: 5px;
+    font-size: 18px;
+}
+.advert-standard{
+    
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.keyfacts{
+    padding-top: 12px;
+    display: inline-flex;
+}
+.keyfacts li{
+    margin-right: 19px;
+    
+}
+.keyfacts li:not(:first-child):not(:last-child):after{
+    content:',';
+    
+}
+.advert-standard-rightarea-likebutton,.advert-standard-rightarea-dislikebutton{
+     height: 70px;
+    right: -1px;
+    top: 160px;
+    width: 189.59px;
+    position: absolute;
+    text-align: center;
+      
+    transition: all 0.3s ease;
+
+}
+.advert-standard-rightarea-dislikebutton{
+    background: #B21400;
+    
+}
+
+.advert-standard-rightarea-dislikebutton:hover{
+    background: #EF1B00;
+    
+}
+.advert-standard-rightarea-likebutton{
+      background: green;
+    
+}
+.advert-standard-rightarea-likebutton:hover{
+    background: #00BA25;
+    
+}
+.advert-standard-rightarea-viewbutton, .advert-standard-rightarea-likebutton, .advert-standard-rightarea-dislikebutton{
+      cursor: pointer;
+    
+}
+.advert-standard-rightarea-viewbutton{
+     height: 66px;
+    right: -1px;
+    top: 230px;
+     width: 189.59px;
+   border-radius: 0px 0px 10px 0px;
+    position: absolute;
+    text-align: center;
+    background: #008CBA;
+   
+    color: white;
+}
+.advert-standard-rightarea-viewbutton:hover{
+    
+    background: #00C0FF;
+}
+.likebutton-text,.viewbutton-text{
+    color: white;
+    margin-top: 10px;
+    
+}
+.advert-standard-rightarea-landlordpicture{
+    height: 160px;
+    right: -1px;
+    top: 0;
+    width: 20%;
+    position: absolute;
+        border-left: 1px solid rgba(0,0,0,0.2);
+     border-radius: 00px 10px 10px 0px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    
+}
+.advert-standard-rightarea-address{
+    position: relative;
+    height: 50px;
+    width: 80%;
+   
+    
+    
+}
+.pagination-container{
+    text-align: center;
+    width: 75%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header-pagination{
+    text-align: left;
+    width: auto;
+position: absolute;
+left: 27px;
+    top: 22px;
+}
+.pagination-right-arrow,.pagination-left-arrow{
+   cursor: pointer;
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,0.2);
+     transition: all 0.2s ease;
+}
+
+.pagination-right-arrow:hover,.pagination-left-arrow:hover{
+    background: #e4e4e4;
+    
+}
+.bottom-padding{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.new-width {
+    width: 35.66667%;
+    z-index: 100;
+}
+.change-align{
+    
+    position: absolute;
+    right: 0;
+}
+.move-to-right{
+    
+    position: absolute;
+    margin-top: 9px;
+    right: 380px;
+}
+
+.advert-standard-thumbnail {
+    background-position: center center;
+    background-image: url(../Image/audiwec.jpg);
+    height: 200px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image-thumbnail {
+    margin-top: 10px;
+    margin-left: 5px;
+    height: 90px;
+    width: 90px;
+}
+
+.main-property-advert-full {
+     margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    height: 600px;
+   background: #dddfe2;
+    
+}
+
+.side-panel {
+    background: #dddfe2;
+    position: absolute;
+    border: 1px solid black;
+    width: 20%;
+    height: 86%;
+    right: 0px;
+    top: 5%;
+}
+
+.letting-agent-details-name,
+.letting-agent-details-contact,
+.letting-agent-details-rating,
+.letting-agent-details-rating-number {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.letting-agent-details-rating {
+    margin-bottom: 5px;
+}
+
+.letting-agent-description {
+    border-top: 1px solid black;
+}
+
+.side-panel-company-logo {
+    height: 140px;
+    width: 100%;
+}
+
+.register-interest-button {
+    position: absolute;
+    width: 100%;
+    padding: 50px;
+    bottom: 0;
+}
+
+.centered-image {
+    display: block;
+    padding-top: 13px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.main-property-advert-header {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    display: inline-block;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.main-property-advert-header-right {
+    right: 1px;
+    position: absolute;
+    height: 100%;
+    width: 380px;
+}
+
+.main-property-advert-header-left {
+    left: 0;
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-property-advert-header-left-text {
+    font-size: 20px;
+}
+
+.main-property-advert-mainpicture {
+    background: #b1b1b1;
+    background-size: contain;
+    position: relative;
+    height: 390px;
+    border: 1px solid black;
+ 
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.main-property-advert-picture-thumbnails {
+    position: relative;
+    height: 110px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.main-property-advert-details {
+    position: relative;
+
+   
+    border-bottom: 0;
+}
+
+.main-property-advert-left {
+    position: relative;
+    border-right: 1px solid black;
+    width: 60%;
+     border: 1px solid black;
+}
+
+.main-property-advert-right {
+    position: absolute;
+    height: 100%;
+    width: 40%;
+    right: 0;
+    top: 0;
+     border: 1px solid black;
+    border-left: 0;
+}
+
+.main-property-advert-right-features {
+    display: inline-flex;
+}
+
+li {
+    list-style-type: none;
+    margin-left: -15px;
+}
+
+.adjust-checkmark {
+    font-size: 20px;
+}
+
+
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+
+#map {
+    height: 100%;
+}
+
+
+/* Optional: Makes the sample page fill the window. */
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#description {
+   font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#infowindow-content .title {
+    font-weight: bold;
+}
+
+#infowindow-content {
+    display: none;
+}
+
+#map #infowindow-content {
+    display: inline;
+}
+
+.pac-card {
+    margin: 10px 10px 0 0;
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    background-color: #0000;
+    font-family: Roboto;
+}
+
+#pac-container {
+    padding-bottom: 12px;
+    margin-right: 12px;
+}
+
+.pac-container {
+    font-family: 'Source Sans Pro', sans-serif !important;
+}
+
+.pac-controls {
+    display: inline-block;
+    padding: 5px 11px;
+}
+
+.pac-controls label {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+#pac-input {
+    background-color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+}
+
+#pac-input:focus {
+    border-color: #4d90fe;
+}
+
+#title {
+    color: #fff;
+    background-color: #4d90fe;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 6px 12px;
+}
+
+#target {
+    width: 400px;
+}
+
+.push-to-right {
+    position: relative;
+    right: 0;
+    padding-top: 8px;
+    padding-left: 120px;
+}
+
+.rounded-edge {
+    border-radius: 15px 0px 0px 15px !important;
+  
+}
+.row-fix{
+    
+  
+    margin-left: 0px !important;
+}
+.fix-width{
+    
+    padding: 0;
+}
+.lower-row{
+  
+    
+}
+[type='checkbox']{
+    
+    
+    margin: 0;
+}
+
+
+
+@media screen and (max-width: 1700px) {
+    .advert-standard-rightarea{
+        
+        width: 75% ;
+    }
+    
+}
+
+
+.btn-style{
+	border : solid 0px #ffffff;
+	-webkit-box-shadow : 0px 0px 5px rgba(0,0,0,0.5);
+	-moz-box-shadow : 0px 0px 5px rgba(0,0,0,0.5);
+	box-shadow : 0px 0px 5px rgba(0,0,0,0.5);
+	font-size : 20px;
+	color : #000000;
+	padding : 15px 68px;
+	background-color : #ffffff;
+    margin-bottom: 10px;
+     transition: all 0.2s ease;
+}
+
+
+.btn-style:hover{
+    
+     transition: all 0.2s ease;
+    background-color: rgb(12, 124, 153);
+}
+
+
+label > [type='checkbox'], label > [type='radio']{
+    
+    margin-right:0;
+}
+.success{
+    height: 100%;
+    width: 100px;
+}
+
+.instructions{
+    position: absolute;
+    background: #e8e6e6;
+    height: 100%;
+    width: 30%;
+    border-right: 1px solid rgba(0,0,0,0.4);
+}
+.property-window{
+    background: white;
+    top: 0;
+    left: 30%;
+    position: absolute;
+    height: 100%;
+    width: 70%;
+
+}
+.image-view{
+    
+    object-fit:contain;
+    height:246px;
+    width:250px;
+    background:green;
+    top: 1px;
+}
+.bottom-buttons{
+    border-top: 1px solid rgba(0,0,0,0.4);
+    max-width: inherit;
+    background: rgb(232, 230, 230);
+    left: 30%;
+    width: 70%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+.support{
+    
+    width: 100%;
+}
+.completion{
+    display: none;
+    position: absolute;
+    z-index: 10;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+  
+}
+.child {
+  position: absolute;
+  top: 50%;
+     width: 100%;
+    text-align: center;
+  transform: translateY(-50%);
+}
+.propertyview{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    height: 600px;
+    background: blue;
+    border: 1px solid black;
+}
+.property-header{
+    position: relative;
+    height: 50px;
+    background: white;
+}
+.property-header-left{
+    position: absolute;
+    height: 100%;
+    width: 800px;
+
+}
+.property-header-right{
+    right: 0;
+    position: absolute;
+    height: 100%;
+    background: green;    transition: all 0.4s ease;
+}
+.like-button2{
+    margin-top: 7px;
+    height: 100%;
+    text-align: center;
+    color: white;
+    width: 200px;
+
+}
+.property-header-right:hover{
+  background: #00BA25;
+    cursor: pointer;
+    
+}
+.property-header-left-price{
+    margin-top: 14px;
+    padding-right: 10px;
+    position: absolute;
+    right: 0;
+}
+.property-header-left-details{
+    position: absolute;
+    margin-top: 14px;
+}
+.property-container{
+   top: 20px;
+    padding-bottom: 80px;
+   
+}
+
+.property-advert-container{
+    border-radius: 5px;
+     background: rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.4);
+}
+
+.property-advert-topbar{
+    font-size: 20px;
+    display: flex;
+    height: 50px;
+    border-bottom: 1px solid rgba(0,0,0,0.4);
+}
+.property-advert-topbar-propertyname{
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    text-align: left;
+    margin-left: 15px;
+    width: 60%;
+    font-size: 18px;
+}
+.property-advert-topbar-right-section{
+    display: flex;
+    right: 0;
+    position: relative;
+    width: 40%;
+    flex-direction: column;
+    justify-content: center;
+}
+.like-button{
+    height: 100%;
+    background: green;
+    transition: all 0.4s ease;
+}
+
+.like-button:hover{
+  background: #00BA25;
+    cursor: pointer;
+    
+}
+.property-advert-topbar-right-section ul{
+    margin: 0;
+    width: 100%;
+    display: flex;
+  
+   
+}
+.property-advert-topbar-right-section li{
+    display: flex;
+    margin: 0;
+    width: 50%;
+     flex-direction: column;
+    justify-content: center;
+}
+.right-section-price{
+    text-align: right;
+    padding-right: 10px;
+      color: #d64521;
+     transition: all 0.4s ease;
+    font-size: 20px;
+}
+.right-section-price:hover{
+   color: #FF5E36;
+}
+.center-thumbs{
+    color: white;
+     position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+    width: 50%;
+    text-align: center;
+}
+.property-advert-bigimage-container{
+    background: rgba(212, 212, 212, 0.24);;
+}
+.property-advert-bigimage{
+    height: 400px;
+    background: black;
+     flex-direction: column;
+    justify-content: center;
+    display: inline-flex;
+}
+.property-advert-bigimage img{
+    max-height: 400px;
+    
+}
+
+.property-advert-thumbnails{
+    
+    height: 100px;
+     border-top: 1px solid rgba(0,0,0,0.4);
+    border-bottom: 1px solid rgba(0,0,0,0.4);
+}
+.property-advert-thumbnails ul{
+    margin: 0;
+    display: flex;
+}
+.property-advert-thumbnails li{
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    display: flex;
+
+    width: 90px;
+    height: 90px;
+}
+.property-advert-info-section{
+  
+   display: flex;
+    width: 100%;
+}
+.property-advert-description{
+    padding-top: 15px;
+    position: relative;
+    width: 70%;
+      border-right: 1px solid rgba(0,0,0,0.4);
+}
+
+.property-advert-description-text{
+    text-align: left;
+        margin-left: 15px;
+}
+.property-advert-description-info{
+    position: absolute;
+    right: 0;
+    top: 15px;
+    margin-right: 15px;
+}
+.property-advert-features{
+  
+    padding-bottom: 15px;
+    width: 40%;
+text-align: left;
+}
+.property-advert-features ul{ margin: 0;}
+
+
+
+}
+@media screen and (max-width: 1240px) {
+    .button-container{
+    left: 20vw;
+        width: 80vw;
+    }
+    .property-container{
+        left: 20vw;
+        width: 60vw;
+    }
+    ..landlord-info-section{
+        width: 20vw;
+        
+    }
+    .sidebar{
+        width: 15vw;
+        
+    }
+    .main-property-advert-header-left-text{
+        font-size: 16px;
+    }
+    
+}
+@media screen and (max-width: 1024px) {
+        .sidebar{
+        width: 25vw;
+    }
+    .advert-container1{
+        left:25vw;
+        width: 75vw;
+    }
+    .button-container{
+        
+        left: 25vw;
+        width: 75vw;
+    }
+    .property-container{
+        left: 0vw;
+        width: 67vw;
+        
+    }
+    .landlord-info-section{
+        width: 25vw;
+    }
+
+    
+}
+@media screen and (max-width: 1600px) {
+    
+}
+@media screen and (max-width: 1440px) {
+    .advert-standard{
+        width: 999px;
+
+    }
+    .advert-standard-left-container{
+        
+        width:200px;
+        
+    }
+    .advert-standard-middle-container{
+        width: 600px;
+        left: 200px;
+    }
+    .advert-standard-right-container{
+        left: 800px;
+        width: 196px;
+    }
+    .advert-standard-rightarea-price{
+        
+        font-size: 22px;
+    }
+    .header-content-pages{
+        margin-left: 30px;
+        
+    }
+    .header-content{
+        width: 85%;
+        margin-left: 6%;
+        
+    }
+}
+
+
+input[type=range] {
+  -webkit-appearance: none;
+  width: 60%;
+  margin: 13.8px 0;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #480000, 0px 0px 1px #620000;
+  background: #000000;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -14px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #0d0d0d;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #480000, 0px 0px 1px #620000;
+  background: #000000;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #000000;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #480000, 0px 0px 1px #620000;
+}
+input[type=range]::-ms-fill-upper {
+  background: #000000;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #480000, 0px 0px 1px #620000;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+  height: 8.4px;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #000000;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #0d0d0d;
+}
+
+

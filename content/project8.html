@@ -1,0 +1,66 @@
+<script>$('.icon-cancel').click(function(e) {
+     $(".overlay-body-cover").css("opacity",0);
+     $("body").toggleClass("stop-scroll");
+    setTimeout(function(){
+        $(".overlay-body-cover").css("visibility", "hidden");},700);
+        
+        setTimeout(function(){
+        $(".overlay-body-content").remove();        
+            
+        },700);
+        
+        
+    
+});</script>
+
+
+<div class="overlay-body-content">
+        
+        
+       <div class="row">
+            
+            <div class="small-9 large-9 columns">
+            <p class="offer-header overlay-title-header">Project One</p>
+            </div>
+             <div class="small-3 large-3 columns align-right">
+            <div class="rotation"><i class="icon-cancel"></i></div>
+    
+           </div></div>
+        <div class="overlay-image"></div>
+        <div class="row ">
+            
+            <div class="medium-12 large-7 columns">
+            <p class="offer-header">Description</p>
+                <p class="offer-text">This is where a small description will go mentioning the project, the skills, the people, and the objectives.This is where a small description will go mentioning the project, the skills, the people, and the objectives</p>
+            </div>
+             <div class="medium-12 large-5 columns">
+            <p class="offer-header">Technology</p>
+                 <ul class="skills-list offer-text tech-list">
+                 <li><i class="icon-file-code"></i> PHP</li>
+                <li>PHP</li>
+                     <li>PHP</li>
+                     <li>PHP</li>
+                 </ul>
+            </div>
+            <div class="large-7 columns">
+            <p class="offer-header">Project Documents</p>
+                <p class="offer-text reduce-padding"> <ul class="skills-list offer-text">
+                
+                
+                
+                 <li><a href="../ProjectDocs/Project1/softwareSpecification.docx">Software Specification</a></li>
+                     <li><a>Testing Document</a></li>
+                     <li><a>Review</a></li>
+                 </ul>
+            </div>
+            <div class="large-5 columns">
+            <p class="offer-header">Links</p>
+                  <ul class="skills-list offer-text">
+                      <li><a>Github</a></li>
+                  
+                 </ul>
+            </div>
+        </div>
+        
+        
+        </div>

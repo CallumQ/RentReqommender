@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="css/foundation.css" />
+     <link href="css/font-awesome.min.css" rel="stylesheet" />
+     <link rel="stylesheet" href="css/index.css">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+    <title>Rent ReQommender - Personalised property suggestions</title>
+    <script type="text/javascript">
+
+function yesnoCheck() {
+    if (document.getElementById('AccountTenant').checked) {
+        document.getElementById('tenant-registerform').style.display = 'block';
+    } else {
+        document.getElementById('tenant-registerform').style.display = 'none';
+        
+        
+    }
+    if(document.getElementById('AccountLandlord').checked){
+            document.getElementById('LandLord-registerform').style.display = 'block';
+            
+            
+        }
+        else{
+            document.getElementById('LandLord-registerform').style.display = 'none';
+            
+        }
+}
+        
+      
+       
+</script>
+</head>
+
+<body>
+   
+        <div class="nav-bar"> 
+            <div class="nav-bar-left">
+                <a href="index.php">
+                               <img src="Image/logoplaceholder.png">
+                </a>
+                    </div>
+            
+            <div class="nav-bar-right">
+                <ul class="nav-bar-right-menu">
+                    <li><a href="#">Help</a> </li> 
+                    <li> <a href="#">Register</a></li> 
+                    <li class="nav-bar-button-outer"> <a href="#" class="nav-bar-button">Log in</a></li>
+                </ul>
+            </div>
+        </div> 
+    
+    <div class="main-body-content login-form">
+        <div class="medium-6 columns small-centered ">
+           
+                <div class="register-form">
+               <p class="form-header-text">Tenant login</p> 
+                     <div class="row">
+      
+    
+    
+                    </div>
+ 
+  <div class="row" id="">
+     <form>
+      
+      
+      <div class="medium-6 columns small-centered">
+      <label>E-mail Address *
+        <input type="text" placeholder="e.g. johnsmith@example.com">
+      </label>
+    </div>
+     
+      <div class="medium-6 columns small-centered">
+      <label>Password *
+        <input type="text" placeholder="e.g. ThisIsNotAGoodPassword123">
+      </label>
+    </div>
+       
+      <div class="medium-12 columns">
+      
+      <input type="submit" class="button full-width-button" value="Submit"></div>
+      
+  
+</form></div>
+                    
+                    
+                      
+            
+           <p class="form-header-text footer-text"> 
+            Not registered? Register  <a href="register.php">Here</a>.</p> 
+            </div>
+        </div>
+       
+    </div>
+</body>
+
+</html>

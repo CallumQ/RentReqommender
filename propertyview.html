@@ -1,0 +1,162 @@
+<html>
+
+<head>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/index.css">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>Rent ReQommender - Personalised property suggestions</title>
+    
+    <script type="text/javascript">
+    
+    function select_img(src) {
+
+  document.getElementById("bigimg").style.backgroundImage ="url('"+src+"')";
+}
+    
+    </script>
+</head>
+
+<body>
+
+    <div class="nav-bar">
+        <div class="nav-bar-left">
+            <a href="index.php">
+                <img src="Image/logoplaceholder.png">
+            </a>
+        </div>
+
+        <div class="nav-bar-right">
+            <ul class="nav-bar-right-menu">
+                <li><a href="#">Help</a> </li>
+                <li> Hi there, <span>Username</span></li>
+                <li class="nav-bar-button-outer"> <a href="standardlogin.html" class="nav-bar-button">Log out</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="main-body-content">
+
+        <div class="row">
+            <div class="medium-11 columns">
+                <div class="main-property-advert-full">
+                    <div class="main-property-advert-header">
+                        <div class="main-property-advert-header-left">
+                            <p class="main-property-advert-header-left-text"> 123 Edinburgh</p>
+
+
+                        </div>
+                        <div class="main-property-advert-header-right">
+                            <button type="button" class="button no-margin">Add to shortlist</button>
+                            <button type="button" class=" no-margin success button">Like</button>
+                            <button type="button" class="alert  button no-margin">dislike</button>
+                        </div>
+
+                    </div>
+                    <div class="main-property-advert-mainpicture" id="bigimg">
+
+
+
+
+
+
+
+                    </div>
+                    <div class="main-property-advert-picture-thumbnails" >
+
+                        <img src="Image/edinburghlong.jpg" class="image-thumbnail" onclick="select_img(this.src)">
+                        <img src="Image/edinburghlong1.jpg" class="image-thumbnail" onclick="select_img(this.src)">
+                        <img src="Image/edinburghlong2.jpg" class="image-thumbnail" onclick="select_img(this.src)">
+                        <img src="Image/edinburghlong3.jpg" class="image-thumbnail" onclick="select_img(this.src)">
+
+
+                    </div>
+                    <div class="main-property-advert-details">
+                        <div class="main-property-advert-left">Description
+                        <br>
+                            lorem ipsum he sun dorro cheese el gato pasta spaghetti pasta lasagne cheese sauce vcfvgfdcg gds dsf  
+                        
+                        </div>
+                        
+                        <div class="main-property-advert-right">Details
+                            <br>
+                            <div class="main-property-advert-right-features">
+                                <ul>
+                                <li>
+                                    <span class="fa-stack fa-1x">
+                                    <i class="fa fa-square-o fa-stack-2x"></i>
+                                    <i class="fa fa-check fa-stack-1x adjust-checkmark"></i> 
+  
+                                </span>
+                                En-suite
+                                </li>
+                                    <li>
+                                    <span class="fa-stack fa-1x">
+                                    <i class="fa fa-square-o fa-stack-2x"></i>
+                                    <i class="fa fa-check fa-stack-1x adjust-checkmark"></i> 
+  
+                                </span>
+                                En-suite
+                                    </li>
+
+                                </ul>
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        <div class="side-panel">
+            <p class="side-panel-header">Letting Agent Details</p>
+        <div class="side-panel-company-logo">
+            <div class="side-panel-company-logo-container">
+            
+                <img src="Image/favicon-114.png" class="centered-image">
+            </div>
+            </div>
+            <div class="letting-agent-details">
+            <div class="letting-agent-details-name">
+                Properties R us
+                </div>
+            <div class="letting-agent-details-contact">
+                Contact us : 01324 123456
+                </div>
+            <div class="letting-agent-details-rating">
+                <i class="fa fa-star-o fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-star-o fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-star-o fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-star-o fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-star-o fa-2x" aria-hidden="true"></i>
+                
+            
+                
+                </div>
+            <div class="letting-agent-details-rating-number"><span class="rating-number">X Ratings</span></div>
+            </div>
+            <div class="letting-agent-description"><p class="letting-agent-description-title">Description</p>
+                <p class="letting-agent-description-body">lorem ipsum uisidop d9sai asdopi aspoi dspaoidsapo dsapoidaspoi poasi opsaidopasid opsaidposaid opasdi posadi aposid posida posaid poasid poasid poasi dpoasdi opi opi poi poi </p>
+            
+            
+            </div>
+            
+        <button type="button" class="button no-margin register-interest-button">Register Interest</button>
+        
+        </div>
+
+    </div>
+</body>
+
+
+</html>

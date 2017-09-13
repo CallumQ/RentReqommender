@@ -1,0 +1,77 @@
+<script>$('.icon-cancel').click(function(e) {
+        
+     $(".overlay-body-cover").css("opacity",0);
+     $("body").toggleClass("stop-scroll");
+    setTimeout(function(){
+        $(".overlay-body-cover").css("visibility", "hidden");},700);
+        
+        setTimeout(function(){
+        $(".overlay-body-content").remove();        
+            
+        },700);
+        
+        
+    
+});</script>
+
+
+<div class="overlay-body-content">
+        
+        
+       <div class="row">
+            
+            <div class="small-9 large-9 columns">
+            <p class="offer-header overlay-title-header remove-margin">Project One</p>
+            </div>
+             <div class="small-3 large-3 columns align-right">
+            <div class="rotation"><i class="icon-cancel"></i></div>
+    
+           </div></div>
+        <div class="overlay-image"></div>
+        <div class="row ">
+            
+            <div class="medium-12 large-7 columns">
+            <p class="offer-header reduce-padding">Description</p>
+                <p class="offer-text">This is where a small description will go mentioning the project, the skills, the people, and the objectives.This is where a small description will go mentioning the project, the skills, the people, and the objectives</p>
+            </div>
+             <div class="medium-12 large-5 columns">
+            <p class="offer-header remove-margin">Technology</p>
+                 <ul class="skills-list offer-text tech-list">
+                 <li class="align-vertical"><i class="devicon-html5-plain tech-icon"></i>HTML5 </li>
+                     
+                     
+                     
+                <li><i class="devicon-css3-plain tech-icon"></i>CSS 3</li>
+                     
+                     
+                     
+                    <li><i class="devicon-javascript-plain tech-icon"></i>Javascript</li>
+                     
+                     
+                     
+                     <li><i class="devicon-jquery-plain tech-icon"></i>Jquery</li>
+                     <li><i class="devicon-foundation-plain tech-icon "></i>Foundation 6</li>
+                 </ul>
+            </div>
+            <div class="large-7 columns">
+            <p class="offer-header remove-margin">Project Documents</p>
+                <p class="offer-text reduce-padding"> <ul class="skills-list offer-text">
+                
+                
+                
+                 <li><a href="../ProjectDocs/Project1/softwareSpecification.docx">Software Specification</a></li>
+                     <li><a>Testing Document</a></li>
+                     <li><a>Review</a></li>
+                 </ul>
+            </div>
+            <div class="large-5 columns">
+            <p class="offer-header remove-margin">Links</p>
+                  <ul class="skills-list offer-text">
+                      <li><a>Github</a></li>
+                  
+                 </ul>
+            </div>
+        </div>
+        
+        
+        </div>
